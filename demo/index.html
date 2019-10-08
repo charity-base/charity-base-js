@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src='https://unpkg.com/charity-base-widgets@^0.4/dist/index.js'></script>
+    <link href='https://unpkg.com/charity-base-widgets@^0.4/dist/index.css' rel='stylesheet' type='text/css' />
+
+    <body>
+      <div id='charity-base-form'></div>
+      <div id='errors' style="color: red;"></div>
+      <script>
+      !function() {
+        let apiKey
+        try {
+          apiKey = window.location.search.split('api_key=')[1].split('&')[0]
+        } catch(e) {
+          document.getElementById('errors').innerHTML = "Failed to find 'api_key' in query string"
+        }
+        var cb = CharityBase(apiKey)
+        var el = document.getElementById('charity-base-form')
+        cb.renderForm(el, {}, function() {
+          console.log('element rendered')
+        })
+      }()
+      </script>
+    </body>
+  </head>
+  <body>
+    <h1></h1>
+  </body>
+</html>
