@@ -27,8 +27,6 @@
         var searchElement = document.getElementById('charity-base-search')
         cb.renderSearch(searchElement, {
           onSelect: function(x) {
-            console.log('selected')
-            console.log(x)
             document.getElementById('charity-base-input-id').value = x.value
             document.getElementById('charity-base-input-name').value = x.label
           }
