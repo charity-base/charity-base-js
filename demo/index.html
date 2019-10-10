@@ -1,10 +1,15 @@
 <html>
   <head>
-    <script src='https://unpkg.com/charity-base-widgets@^0.4/dist/index.js'></script>
-    <link href='https://unpkg.com/charity-base-widgets@^0.4/dist/index.css' rel='stylesheet' type='text/css' />
+    <script src='./index.js'></script>
+    <link href='./index.css' rel='stylesheet' type='text/css' />
 
     <body>
       <div id='charity-base-form'></div>
+      <div id='charity-base-search'></div>
+      <form>
+        <input id='charity-base-input-id' type='text' placeholder='Charity ID' />
+        <input id='charity-base-input-name' type='text' placeholder='Charity Name' />
+      </form>
       <div id='errors' style="color: red;"></div>
       <script>
       !function() {
@@ -15,9 +20,20 @@
           document.getElementById('errors').innerHTML = "Failed to find 'api_key' in query string"
         }
         var cb = CharityBase(apiKey)
-        var el = document.getElementById('charity-base-form')
-        cb.renderForm(el, {}, function() {
-          console.log('element rendered')
+        // var formElement = document.getElementById('charity-base-form')
+        // cb.renderForm(formElement, {}, function() {
+        //   console.log('form rendered')
+        // })
+        var searchElement = document.getElementById('charity-base-search')
+        cb.renderSearch(searchElement, {
+          onSelect: function(x) {
+            console.log('selected')
+            console.log(x)
+            document.getElementById('charity-base-input-id').value = x.value
+            document.getElementById('charity-base-input-name').value = x.label
+          }
+        }, function() {
+          console.log('search rendered')
         })
       }()
       </script>

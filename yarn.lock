@@ -1330,6 +1330,14 @@ charity-base-search@3.0.0-alpha.6:
     graphql-tag "^2.10.1"
     lodash.debounce "^4.0.8"
 
+charity-base-search@3.0.0-alpha.7:
+  version "3.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/charity-base-search/-/charity-base-search-3.0.0-alpha.7.tgz#5917f5244d27bfd1c4d917153846e8d6eeec68d5"
+  integrity sha512-G06QRtXS0OGJrejTLecx1/MNLEmDLDtTofreonoHWwHcuD7HWEVqaGwG6qHILpuvLqfiPEDL1XpaWw8gJFemgA==
+  dependencies:
+    filter-suggest "^3.2.0"
+    lodash.debounce "^4.0.8"
+
 chokidar@^2.0.2, chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
@@ -2190,7 +2198,7 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
-filter-suggest@3.2.0:
+filter-suggest@3.2.0, filter-suggest@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/filter-suggest/-/filter-suggest-3.2.0.tgz#7a0bcf49a774b7b22bfd77146004a955e5b2344b"
   integrity sha512-NF+5kcBrDTfYNtLPEQqVdoSmm+fNYlL91GqgSKRrITBVCNEEdJB0yRVIDTELoWxKuM/PCboM+4EIJWJ7UfMFjw==
