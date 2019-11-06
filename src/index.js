@@ -7,7 +7,7 @@ import 'charity-base-form/es/index.css'
 function targetNode(elementId) {
   var target = document.getElementById(elementId)
   if (!target) {
-    throw "CharityBase render couldn't find an element with id '" + elementId + "'"
+    throw "Could not find an element with id '" + elementId + "'"
   }
   return target
 }
@@ -15,8 +15,7 @@ function targetNode(elementId) {
 function cbElement(reactElement) {
   return {
     component: reactElement,
-    // rename render -> mount like stripe?
-    render: function(elementId, callback) {
+    mount: function(elementId, callback) {
       ReactDOM.render(reactElement, targetNode(elementId), callback)
     }
   }
