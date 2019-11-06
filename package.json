@@ -1,8 +1,7 @@
 {
   "name": "charity-base-widgets",
   "version": "0.6.0",
-  "main": "dist/charity-base-widgets.js",
-  "module": "dist/charity-base-widgets.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
