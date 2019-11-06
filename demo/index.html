@@ -23,7 +23,8 @@
         document.getElementById('errors').innerHTML = "Failed to find 'api_key' in query string"
       }
       var cb = CharityBase(apiKey)
-      var autofill = cb.createAutofill({
+      var elements = cb.elements()
+      var autofill = elements.createAutofill({
         onButtonClick: x => console.log(x)
       })
       autofill.mount('charity-base-autofill')

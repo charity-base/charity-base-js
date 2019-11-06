@@ -21,14 +21,18 @@ function cbElement(reactElement) {
   }
 }
 
-function CharityBase(apiKey, options) {
+function CharityBase(apiKey) {
   return {
-    createAutofill: function(props) {
-      // re-implement using spread so as not to mutate props?
-      var allProps = props || {}
-      allProps.apiKey = apiKey
-      var reactElement = React.createElement(CharityBaseForm, allProps, null)
-      return cbElement(reactElement)
+    elements: function() {
+      return {
+        createAutofill: function(props) {
+          // re-implement using spread so as not to mutate props?
+          var allProps = props || {}
+          allProps.apiKey = apiKey
+          var reactElement = React.createElement(CharityBaseForm, allProps, null)
+          return cbElement(reactElement)
+        }
+      }
     }
   }
 }
