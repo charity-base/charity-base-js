@@ -1,10 +1,25 @@
 {
-  "name": "charity-base-widgets",
+  "name": "charity-base",
   "version": "1.0.0-beta.3",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "charitybase",
+    "charity",
+    "elements",
+    "search",
+    "form",
+    "data",
+    "api",
+    "client"
+  ],
+  "author": {
+    "name": "Dan Kwiatkowski",
+    "email": "dan.kwiat@charitybase.uk",
+    "url": "https://twitter.com/dan_kwiat"
+  },
   "dependencies": {
     "charity-base-form": "^1.2.5",
     "preact": "^10.0.0"
