@@ -25,6 +25,7 @@
       var cb = CharityBase(apiKey)
       var elements = cb.elements()
       var autofill = elements.createAutofill({
+        outlined: true,
         onButtonClick: x => console.log(x)
       })
       autofill.mount('charity-base-autofill')

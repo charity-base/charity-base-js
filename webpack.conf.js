@@ -41,7 +41,18 @@ module.exports = {
           },
           'css-loader',
         ],
-      }
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [
