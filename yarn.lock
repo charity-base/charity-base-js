@@ -1158,10 +1158,10 @@ chalk@^1.1.1:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-charity-base-form@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/charity-base-form/-/charity-base-form-1.4.0.tgz#a8439b19f265eaf132b16a8da1e3b4b535575d90"
-  integrity sha512-dnYwyZOYGWzm1/7xjVwa0OlXXjndKTKDO9I6B+vMzlPAXR/8LdDK5FsxM/BXUFPtgfVd0vfd1/1lQ/XYEIo2HA==
+charity-base-form@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/charity-base-form/-/charity-base-form-1.5.0.tgz#97ce647dca1eecacfad887a5daa8c5d8051c075c"
+  integrity sha512-u4XP7YsvmdCQ61SuXnN0KRdK/aioW7Ezb3ys7H3Vb4xeFYvOeYsTN07UZNRSs1NiXKIzGX7iiTS3S4Yg4tVKvw==
   dependencies:
     "@material/react-button" "^0.13.0"
     "@material/react-checkbox" "^0.15.0"
