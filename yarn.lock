@@ -1158,22 +1158,22 @@ chalk@^1.1.1:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-charity-base-form@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/charity-base-form/-/charity-base-form-1.6.0.tgz#235cde06aed4feac11d422b320041c002f9ad89a"
-  integrity sha512-2WjmRzadnMHrKmlcQ5bShs0J5kzFC+btkSKth9dukydutuJp2CSXFm462BQSzUrS95HfMIY+/AnTuZJwX1D3RA==
+charity-base-form@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/charity-base-form/-/charity-base-form-1.7.0.tgz#a70061588442218b280f1c5c37a1c6ad491be969"
+  integrity sha512-HAPSLezyGPC+N8g5+nwI5Uog9YTpEjQXcMTis08sOFBoFxtcP9q5wCrwcBjBZrnp9c3ovPtm3Czn7roF79SzrA==
   dependencies:
     "@material/react-button" "^0.13.0"
     "@material/react-checkbox" "^0.15.0"
     "@material/react-layout-grid" "^0.13.0"
-    charity-base-search "3.2.0"
+    charity-base-search "3.3.2"
 
-charity-base-search@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/charity-base-search/-/charity-base-search-3.2.0.tgz#695d01004c21823df3db49ff1a46fc271d6a57e6"
-  integrity sha512-Hf27SRqJ9mnE51TIaHA/djLhuuINfFT2m4GpDYQ07XrWiHBba7Yvx/2ofLTDFYRr3xBsBXSv8EShbj5F8OD9gA==
+charity-base-search@3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/charity-base-search/-/charity-base-search-3.3.2.tgz#551a091de7d9f1515e2c6f2fd3854b686031b18a"
+  integrity sha512-ekCFohBx4GJtEI7IAi3DAclIROH0b3Rvz8nu+SsCAq2Lsu9lxD72JmmEYNI2woxxUUtke9ImMSCHnAB1hGlUBA==
   dependencies:
-    filter-suggest "3.5.1"
+    filter-suggest "3.5.3"
     lodash.debounce "^4.0.8"
 
 chokidar@^2.0.2, chokidar@^2.1.8:
@@ -2017,10 +2017,10 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
-filter-suggest@3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/filter-suggest/-/filter-suggest-3.5.1.tgz#7f8a807d3b15b58ae63140d432ab674ab1ab0d4f"
-  integrity sha512-wtG/mxGPnymJ1Rx5hqrZW9utS2at5g/cJdEiyibU25SvPsaG74NWmZ7gz+cumo0wuPC2BhegG94BkjTYdolWKQ==
+filter-suggest@3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/filter-suggest/-/filter-suggest-3.5.3.tgz#4c82b7daa567118c7f81c00e58e3f51d5fdaec96"
+  integrity sha512-S+LiKWgGjcWrjPgCbwjMVmmHa3jRsnKRHhqMBKwdiYxtzWhQ7XE1H6HwKTdNOkzZhhea+5PHQqZiOV1BuG97tw==
   dependencies:
     "@material/react-list" "^0.15.0"
     "@material/react-text-field" "^0.15.0"
