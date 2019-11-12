@@ -14,7 +14,6 @@ function targetNode(elementId) {
 
 function cbElement(reactElement) {
   return {
-    component: reactElement,
     mount: function(elementId, callback) {
       ReactDOM.render(reactElement, targetNode(elementId), callback)
     }
