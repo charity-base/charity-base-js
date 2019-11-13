@@ -21,7 +21,7 @@
     "url": "https://twitter.com/dan_kwiat"
   },
   "dependencies": {
-    "charity-base-form": "1.7.0",
+    "charity-base-form": "1.7.2",
     "preact": "^10.0.0"
   },
   "devDependencies": {
