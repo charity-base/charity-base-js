@@ -1,0 +1,44 @@
+{
+  "name": "charity-base",
+  "version": "4.0.0-beta.7",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "charitybase",
+    "charity",
+    "elements",
+    "search",
+    "form",
+    "data",
+    "api",
+    "client"
+  ],
+  "author": {
+    "name": "Dan Kwiatkowski",
+    "email": "dan.kwiat@charitybase.uk",
+    "url": "https://twitter.com/dan_kwiat"
+  },
+  "dependencies": {
+    "charity-base-form": "1.9.0",
+    "preact": "^10.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --config webpack.conf.js",
+    "build": "webpack --config webpack.conf.js",
+    "prepublishOnly": "yarn run build"
+  }
+}
